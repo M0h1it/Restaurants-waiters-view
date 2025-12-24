@@ -1,0 +1,153 @@
+/* ----------------------------------------------------
+   GLOBAL RESETS / UTILITIES
+---------------------------------------------------- */
+
+/* Prevent scroll bounce / weird spacing in mobile */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f8f9fa; /* light background */
+  overscroll-behavior: none;
+}
+
+/* Smooth transitions on UI elements */
+* {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Fix scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+
+/* ----------------------------------------------------
+   BRANDING COLORS (CUSTOM THEME)
+---------------------------------------------------- */
+
+/* Your primary red */
+.text-danger {
+  color: #B90009 !important;
+}
+
+.btn-danger {
+  background-color: #B90009 !important;
+  border-color: #B90009 !important;
+}
+
+.bg-danger {
+  background-color: #B90009 !important;
+}
+
+
+/* ----------------------------------------------------
+   LOGIN PAGE STYLES
+---------------------------------------------------- */
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+
+/* ----------------------------------------------------
+   STATUS LEGEND (solid + dashed indicators)
+---------------------------------------------------- */
+
+/* Solid red line (Active) */
+.legend-line-solid {
+  width: 20px;
+  height: 2px;
+  background-color: #dc3545;
+  display: inline-block;
+}
+
+/* Dashed gray line (Inactive) */
+.legend-line-dashed {
+  width: 20px;
+  height: 2px;
+  border-bottom: 2px dashed gray;
+  display: inline-block;
+  background: transparent;
+}
+
+
+/* ----------------------------------------------------
+   TABLE GRID STYLES
+---------------------------------------------------- */
+
+/* Fixed table card height */
+.table-card {
+  min-height: 120px;
+}
+
+/* Active table */
+.active-table {
+  border: 1px solid #dc3545; /* Bootstrap red */
+  background: #ffffff;
+}
+
+/* Inactive table */
+.inactive-table {
+  border: 1px dashed gray;
+  background: #fafafa;
+}
+
+
+/* ----------------------------------------------------
+   NOTIFICATION CARD
+---------------------------------------------------- */
+
+.notification-card {
+  border: 1px solid #e5e5e5;
+}
+
+
+/* ----------------------------------------------------
+   BOTTOM NAV (optional enhancements)
+---------------------------------------------------- */
+
+/* Bigger tap area for safety */
+.nav-icon {
+  padding: 6px;
+}
+
+/* Notification badge */
+.nav-badge {
+  width: 12px;
+  height: 12px;
+  background: #dc3545;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+
+/* ----------------------------------------------------
+   SMOOTH FADE & SLIDE ANIMATIONS
+---------------------------------------------------- */
+
+.fade-in {
+  animation: fadeIn 0.25s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-down {
+  animation: slideDown 0.25s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
