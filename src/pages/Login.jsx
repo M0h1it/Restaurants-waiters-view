@@ -81,6 +81,10 @@ export default function Login() {
         >
           Login
         </button>
+        <div>
+          <span>waiter@123</span>
+          <span>1234</span>
+        </div>
       </div>
     </div>
   );
