@@ -81,9 +81,10 @@ export default function Login() {
         >
           Login
         </button>
-        <div>
-          <span>waiter@123</span>
-          <span>1234</span>
+        <div className="mt-3">
+          <h6>Test:</h6>
+          <span>username: waiter@123</span><br />
+          <span>password: 1234</span>
         </div>
       </div>
     </div>
